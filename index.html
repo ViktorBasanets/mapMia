@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="utf-8">
+        <title>Google Map</title>
+        <link rel="stylesheet" href="style/style.css">
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkIN1elaWepLI5ZlVjZiW4t-0CTkbym0c&callback=initMap"></script>
+		<script src="js/arrays/RegionalGUMVD.js"></script>
+		<script src="js/arrays/RegionalPolice.js"></script>
+		<script src="js/arrays/RegionalDSNS.js"></script>
+		<script src="js/arrays/RegionalDMS.js"></script>
+		<script src="js/arrays/RegionalNGU.js"></script>
+		<script src="js/arrays/RegionalGSC.js"></script>
+		<script src="js/arrays/policeDepartments.js"></script>
+        <script src="js/map.js"></script>
+	</head>
+    <body>
+    	<h1 class="text-center">Акаунти у соціальних медіа органів МВС України</h1>
+        <p class="text-center">Клацніть по зазначеним маркерами, щоб вивести інформаційні вікна</p>
+				
+		<label><input type="checkbox" name="institutions" onchange="initMap()" checked/>Головні управління поліції</label><br />
+		<label><input type="checkbox" name="institutions" onchange="initMap()"/>Регіональні підрозділи поліції</label><br />
+		<label><input type="checkbox" name="institutions" onchange="initMap()"/>Регіональні підрозділи ДСНС</label><br />
+		<label><input type="checkbox" name="institutions" onchange="initMap()"/>Регіональні підрозділи ДМС</label><br />
+		<label><input type="checkbox" name="institutions" onchange="initMap()"/>Регіональні підрозділи НГУ</label><br />
+		<label><input type="checkbox" name="institutions" onchange="initMap()"/>Регіональні сервісні центри</label><br />
+		
+		<div id="map" class="map"></div>
+    </body>
+</html>
